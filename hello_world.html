@@ -20,7 +20,8 @@
         lastName: 'B'
       }
 
-      const element = (
+      function Hello(){
+        return (
         <div>
           <h1>
             Hello, {formatName(user)}!
@@ -32,11 +33,13 @@
             It is {new Date().toLocaleTimeString()}.
           </h2>
         </div>
-      );
+
+        );
+      }
 
 
       ReactDOM.render(
-        element,
+        <Hello />,
         document.getElementById('root')
       );
 
